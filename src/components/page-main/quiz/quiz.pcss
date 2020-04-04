@@ -39,6 +39,14 @@
         width: 70%;
         border-radius: 5px;
         justify-self: center;
+        &--q {
+            width: 350px;
+            grid-column: 2;
+            grid-row: 2;
+            justify-self: end;
+            align-self: center;
+            padding: 20px;
+        }
     }
     &__font {
         font-family: 'PT Font';
@@ -51,8 +59,6 @@
         width: 1000px;
         background: white;
         border-radius: 5px;
-        display: grid;
-        grid-template-rows: 10% min-content auto;
 
     }
     &__go-back {
@@ -89,5 +95,65 @@
         &:hover {
             background: #26A69A;
         }
+    }
+    &__preview-grid {
+        display: grid;
+        grid-template-rows: 10% min-content auto;
+    }
+    &__quiz-grid {
+        display: grid;
+        grid-template-rows: 10% min-content;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__answer-stack {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    &__question-title {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+        justify-self: center;
+        font-family: 'PT Font';
+    }
+    &__answer {
+        height: 40px;
+        font-family: 'PT Font';
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-left: 10px;
+        border-radius: 4px;
+        &:hover {
+            background: #009688;
+            color: white;
+        }
+        &--active {
+            background: #26A69A;
+            color: white;
+            &:hover {
+                background: #26A69A;
+            }
+        }
+    }
+    &__next {
+        width: 80px;
+        height: 30px;
+        font-family: 'PT Font';
+        position: absolute;
+        right: 0;
+        background: #26A69A;
+        border-radius: 0 0 0 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
     }
 }
