@@ -59,8 +59,10 @@ class Quiz extends React.Component {
                 }
             })
         } else {
-            const sum = this.state.answers.reduce((i, p) => i + p);
-            const answer = this.quiz.results[Math.floor(sum / (this.quiz.results.length + 1))];
+            let sum = this.state.answers.reduce((i, p) => i + p);
+            sum += 6 - (answersStack.indexOf(this.state.currentAnswer) + 1);
+            const answerMedium = Math.floor(sum / (this.state.answers.length + 1));
+            const answer = this.quiz.results[answerMedium - 1];
             this.setState({
                 finished: true,
                 result: answer
@@ -68,7 +70,6 @@ class Quiz extends React.Component {
         }
     }
     render(cn) {
-        console.log(this.state.result);
         const question = this.questions[this.state.qIndex];
         const answers = answersStack.map((item, i) => 
         <div 

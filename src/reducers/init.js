@@ -44,6 +44,11 @@ const quizes = [
                 cover: './static/r4.jpg',
                 title: 'R4',
                 inner: 'aj askd;j ;asld qwm,. m'
+            },
+            {
+                cover: './static/q2.jpg',
+                title: 'R5',
+                inner: 'aj askd;j ;asld qwm,. m'
             }
         ]
     },
@@ -66,7 +71,7 @@ const quizes = [
             {
                 cover: './static/q4.jpg',
                 title: 'Owp pasdp x?',
-            }
+            },
         ],
         results: [
             {
@@ -87,6 +92,11 @@ const quizes = [
             {
                 cover: './static/r4.jpg',
                 title: 'R4',
+                inner: 'aj askd;j ;asld qwm,. m'
+            },
+            {
+                cover: './static/q2.jpg',
+                title: 'R5',
                 inner: 'aj askd;j ;asld qwm,. m'
             }
         ]
@@ -131,6 +141,11 @@ const quizes = [
             {
                 cover: './static/r4.jpg',
                 title: 'R4',
+                inner: 'aj askd;j ;asld qwm,. m'
+            },
+            {
+                cover: './static/q2.jpg',
+                title: 'R5',
                 inner: 'aj askd;j ;asld qwm,. m'
             }
         ]
